@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f9fa; /* Color de fondo ligero */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centrado para el Login */
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Ajustes adicionales si se requieren */
+.table-responsive {
+    border-radius: 8px;
+    overflow: hidden;
+}
