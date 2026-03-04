@@ -26,13 +26,13 @@ CREATE TABLE bitacora (
 
 -- INSERCIÓN DE DATOS DE PRUEBA --
 
--- Insertar Tipos de Usuario
+
 INSERT INTO tipo_usuario (nombre_tipo) VALUES 
 ('Administrador'),
 ('Operador'),
 ('Invitado');
 
--- Insertar Usuarios de Prueba
+
 INSERT INTO usuario (nombre_completo, correo, password, id_tipo) VALUES 
 ('Josue Administrador', 'admin@sistema.com', 'admin123', 1),
 ('Operador Pruebas', 'operador@sistema.com', 'opera456', 2);

@@ -2,14 +2,14 @@
 session_start();
 require 'conexion.php';
 
-// Si no hay sesión, regresamos al login por seguridad
+
 if (!isset($_SESSION['id_usuario'])) {
     header("Location: index.html");
     exit();
 }
 
 try {
-    // Consulta para traer los últimos 10 accesos con el nombre del usuario
+    
     $query = "SELECT b.id_registro, u.correo, b.fecha_acceso, b.direccion_ip, b.exito 
               FROM bitacora b 
               INNER JOIN usuario u ON b.id_usuario = u.id_usuario 
